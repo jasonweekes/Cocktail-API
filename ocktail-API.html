@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cocktail API, Pt 2</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Nunito:wght@400;700;800&family=Quicksand&display=swap" rel="stylesheet">
+    
+    <link href="css/Cocktail-API.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Cocktail API - Pt. 2</h1>
+        <img src="images/the-cocktaildb-logo.png" 
+        style="width:450px; padding-bottom:20px;">
+        <!-- 
+            <div style="width:80%; margin:15px auto; text-align:center">
+                <label for="show-all">Show All (up to 25) Results</label>
+                <input type="checkbox" id="show-all" value="all-drinks">
+            </div> 
+        -->
+
+        <!-- <label for="search">Search:</label> -->
+        <input type="search" id="search-box" placeholder="search">
+
+        <select id="menu">
+            <option value="choose">Drink name includes:</option>
+        </select>
+
+        <button>Random Cocktail</button>
+
+        <div id="btn-box"></div>
+
+        <div id="cocktail-box">
+        </div>
+
+    </div>
+
+    <!-- <script src="js/09.03-Cocktails-API-START.js"></script> -->
+    <script src="js/Cocktail-API.js"></script>
+    <!-- <script src="js/09.03-Cocktail-API-FINAL.js"></script> -->
+
+</body>
+
+</html>
