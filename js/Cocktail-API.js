@@ -65,7 +65,7 @@ const cocktailBox = document.getElementById('cocktail-box');
 // Define the getCocktail function:
 function getCocktail() {
     // Declare the url variable and set it to the "base url":
-    let url = "https:thecocktaildb.com/api/json/v1/1/";
+    let url = "https://thecocktaildb.com/api/json/v1/1/";
     // Check if object calling function has a value:
     // empty search box (empty string "") is falsey:
     // this.value exists only for select menu AND search box (NOT for btns)
@@ -94,6 +94,7 @@ function getCocktail() {
 
     // Send fetch() request with url and GET method:
     fetch(url, {method:"GET"})
+        console.log(url)
 
     // .then() No. 1: Handle the response by parsing the json
     .then(res => res.json())
