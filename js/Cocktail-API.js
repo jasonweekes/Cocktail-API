@@ -1,4 +1,5 @@
 // Lesson 09.03 Cocktail API
+console.log('updated')
 
 // Given cocktail keywords for making select options:
 const cocktailkKeywords = [
