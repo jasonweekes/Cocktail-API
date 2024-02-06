@@ -98,11 +98,10 @@ function getCocktail() {
     // Send fetch() request with url and GET method:
     fetch(url, {method:"GET"})
         console.log(url)
-        console.log('res',res)
-
+      
     // .then() No. 1: Handle the response by parsing the json
     .then(res => res.json())
-
+            console.log('res',res)
     // .then() No. 2: Handle the parsed object by outputting data:
     .then(obj => {
 
