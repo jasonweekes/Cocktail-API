@@ -96,7 +96,9 @@ function getCocktail() {
 
     fetch(url, {method:"GET"})
     .then(res => res.json())
+        console.log('res',res)
     .then(obj => {
+        console.log('obj',obj)
         // Handle the parsed object here
     })
     .catch(error => {
