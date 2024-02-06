@@ -27,6 +27,7 @@ const letters = "ABCDEFGHIJKLMNOPQRSTVWYZ"; // for making letter buttons
 const btnBox = document.getElementById('btn-box');
 
 letters.split("").forEach(e => {
+    console.log('letters',e)
     const button = document.createElement('button');
     button.className = 'letter-btn';
     button.textContent = e; // each btn displays its letter
