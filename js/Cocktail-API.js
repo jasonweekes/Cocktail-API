@@ -73,6 +73,7 @@ function getCocktail() {
     if(this.value) { // btns don't have values, but search box and menu do
         // obj calling function has a value (string)
         url += `search.php?s=${this.value}`;
+        console.log(url)
         // so concat that string value onto end of url:
         // "s=lime" queries db for "lime" in cocktail name
     } else { // a button called the func BUT what kind of btn: Letter or Random?
