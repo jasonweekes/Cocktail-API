@@ -94,15 +94,14 @@ function getCocktail() {
     // If it's not the menu calling, reset select menu to index 0
     if(this.id != 'menu') menu.selectedIndex = 0;
 
-    // Send fetch() request with url and GET method:
     fetch(url, {method:"GET"})
-        console.log(url)
-
-    // .then() No. 1: Handle the response by parsing the json
     .then(res => res.json())
-
-    // .then() No. 2: Handle the parsed object by outputting data:
     .then(obj => {
+        // Handle the parsed object here
+    })
+    .catch(error => {
+        console.error('Fetch error:', error);
+    });
 
         console.log('obj.drinks:', obj.drinks); // result returns one obj called "drinks"
         // the value of which is an array, one array item per drink
